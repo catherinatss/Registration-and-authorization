@@ -1,0 +1,138 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+ul li{list-style: none;}
+/* img{vertical-align: top;} */
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.default-title {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 0 auto 50px;
+}
+
+.default-label {
+  font-size: 0.8em;
+  color: #909090;
+  text-align: start;
+  width: 100%;
+}
+
+.default-input {
+  width: 100%;
+  border-bottom: 1px solid #cdcccc;
+  margin-bottom: 20px;
+  padding: 7px 0;
+}
+
+.default-input::placeholder {
+  color: #646363;
+  font-size: 1em;
+}
+
+.default-btn {
+  max-width: 300px;
+  width: 100%;
+  background-color: #27bc5b;
+  color: #ffffff;
+  padding: 9px;
+  margin-top: 12px;
+  margin: 12px auto 0;
+}
+
+.default-btn:hover {
+  background-color: #909090;
+}
+
+.default-links {
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+.default-link {
+  padding: 0 2px;
+  color: #27bc5b;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.default-link:hover {
+  color: #909090;
+}
+
+.registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.default-mark {
+  color: #27bc5b;
+}
+
+.grid-col {
+  grid-column: 1/3;
+  margin-top: 0;
+}
+
+.registration__label {
+  width: 100%;
+}
+
+.registration__link {
+  font-size: 0.8em;
+}
+
+@media (max-width: 426px) {
+  .registration {
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: static;
+    transform: translate(0, 0);
+    padding: 20px;
+  }
+
+  .grid-col {
+    grid-column: 1/1;
+  }
+}
